@@ -10,7 +10,7 @@ pipeline {
 stages{
         stage('Build'){
             steps {
-                sh '/usr/local/src/apache-maven/bin/mvn clean package'
+                sh '/usr/local/src/apache-maven/bin/mvn -X clean package'
             }
             post {
                 success {
